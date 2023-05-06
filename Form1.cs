@@ -14,13 +14,13 @@ using ConBinHexOct;
 namespace Translator
 {
     public partial class TranslatorPage : Form
-    {
+    { 
         public TranslatorPage()
         {
             InitializeComponent();
         }
 
-        private void transBtn_Click(object sender, EventArgs e)
+        /*private void transBtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -39,6 +39,6 @@ namespace Translator
                 SystemSounds.Beep.Play();
                 MessageBox.Show("Número inválido", "Erro de número");
             }
-        }
+        }*/
     }
 }

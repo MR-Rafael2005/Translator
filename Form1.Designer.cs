@@ -29,294 +29,206 @@ namespace Translator
         /// </summary>
         private void InitializeComponent()
         {
-            this.PageControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.inpTBox = new System.Windows.Forms.TextBox();
-            this.outTBox = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.binTBtn = new System.Windows.Forms.RadioButton();
-            this.hexTBtn = new System.Windows.Forms.RadioButton();
-            this.octTBtn = new System.Windows.Forms.RadioButton();
-            this.decTBtn = new System.Windows.Forms.RadioButton();
-            this.transBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.binCBtn = new System.Windows.Forms.RadioButton();
-            this.hexCBtn = new System.Windows.Forms.RadioButton();
-            this.octCBtn = new System.Windows.Forms.RadioButton();
-            this.decCBtn = new System.Windows.Forms.RadioButton();
-            this.creBtn = new System.Windows.Forms.Button();
-            this.PageControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.PagesControl = new System.Windows.Forms.TabControl();
+            this.BinPage = new System.Windows.Forms.TabPage();
+            this.BinBtn1 = new System.Windows.Forms.Button();
+            this.BinBtn0 = new System.Windows.Forms.Button();
+            this.BinOutBox = new System.Windows.Forms.TextBox();
+            this.BinInpBox = new System.Windows.Forms.TextBox();
+            this.HexPage = new System.Windows.Forms.TabPage();
+            this.OctPage = new System.Windows.Forms.TabPage();
+            this.ASCIIPage = new System.Windows.Forms.TabPage();
+            this.BinBtn2 = new System.Windows.Forms.Button();
+            this.BinBtn3 = new System.Windows.Forms.Button();
+            this.BinBtn4 = new System.Windows.Forms.Button();
+            this.BinBtn5 = new System.Windows.Forms.Button();
+            this.BinBtn6 = new System.Windows.Forms.Button();
+            this.PagesControl.SuspendLayout();
+            this.BinPage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // PageControl
+            // PagesControl
             // 
-            this.PageControl.Controls.Add(this.tabPage1);
-            this.PageControl.Controls.Add(this.tabPage2);
-            this.PageControl.Controls.Add(this.tabPage3);
-            this.PageControl.Location = new System.Drawing.Point(0, 0);
-            this.PageControl.Name = "PageControl";
-            this.PageControl.SelectedIndex = 0;
-            this.PageControl.Size = new System.Drawing.Size(595, 335);
-            this.PageControl.TabIndex = 0;
+            this.PagesControl.Controls.Add(this.BinPage);
+            this.PagesControl.Controls.Add(this.HexPage);
+            this.PagesControl.Controls.Add(this.OctPage);
+            this.PagesControl.Controls.Add(this.ASCIIPage);
+            this.PagesControl.Location = new System.Drawing.Point(0, 0);
+            this.PagesControl.Name = "PagesControl";
+            this.PagesControl.SelectedIndex = 0;
+            this.PagesControl.Size = new System.Drawing.Size(585, 362);
+            this.PagesControl.TabIndex = 0;
             // 
-            // tabPage1
+            // BinPage
             // 
-            this.tabPage1.Controls.Add(this.transBtn);
-            this.tabPage1.Controls.Add(this.decTBtn);
-            this.tabPage1.Controls.Add(this.octTBtn);
-            this.tabPage1.Controls.Add(this.hexTBtn);
-            this.tabPage1.Controls.Add(this.binTBtn);
-            this.tabPage1.Controls.Add(this.progressBar1);
-            this.tabPage1.Controls.Add(this.outTBox);
-            this.tabPage1.Controls.Add(this.inpTBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(587, 309);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Translate Page";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.BinPage.Controls.Add(this.BinBtn6);
+            this.BinPage.Controls.Add(this.BinBtn5);
+            this.BinPage.Controls.Add(this.BinBtn4);
+            this.BinPage.Controls.Add(this.BinBtn3);
+            this.BinPage.Controls.Add(this.BinBtn2);
+            this.BinPage.Controls.Add(this.BinBtn1);
+            this.BinPage.Controls.Add(this.BinBtn0);
+            this.BinPage.Controls.Add(this.BinOutBox);
+            this.BinPage.Controls.Add(this.BinInpBox);
+            this.BinPage.Location = new System.Drawing.Point(4, 22);
+            this.BinPage.Name = "BinPage";
+            this.BinPage.Padding = new System.Windows.Forms.Padding(3);
+            this.BinPage.Size = new System.Drawing.Size(577, 336);
+            this.BinPage.TabIndex = 0;
+            this.BinPage.Text = "Binary";
+            this.BinPage.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // BinBtn1
             // 
-            this.tabPage2.Controls.Add(this.creBtn);
-            this.tabPage2.Controls.Add(this.decCBtn);
-            this.tabPage2.Controls.Add(this.octCBtn);
-            this.tabPage2.Controls.Add(this.hexCBtn);
-            this.tabPage2.Controls.Add(this.binCBtn);
-            this.tabPage2.Controls.Add(this.progressBar2);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(587, 309);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Create Page";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.BinBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn1.Location = new System.Drawing.Point(110, 160);
+            this.BinBtn1.Name = "BinBtn1";
+            this.BinBtn1.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn1.TabIndex = 3;
+            this.BinBtn1.Text = "1";
+            this.BinBtn1.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // BinBtn0
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(587, 309);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ajuda";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.BinBtn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn0.Location = new System.Drawing.Point(32, 160);
+            this.BinBtn0.Name = "BinBtn0";
+            this.BinBtn0.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn0.TabIndex = 2;
+            this.BinBtn0.Text = "0";
+            this.BinBtn0.UseVisualStyleBackColor = true;
             // 
-            // inpTBox
+            // BinOutBox
             // 
-            this.inpTBox.Location = new System.Drawing.Point(0, 0);
-            this.inpTBox.Multiline = true;
-            this.inpTBox.Name = "inpTBox";
-            this.inpTBox.Size = new System.Drawing.Size(290, 160);
-            this.inpTBox.TabIndex = 0;
+            this.BinOutBox.Location = new System.Drawing.Point(292, 0);
+            this.BinOutBox.Multiline = true;
+            this.BinOutBox.Name = "BinOutBox";
+            this.BinOutBox.ReadOnly = true;
+            this.BinOutBox.Size = new System.Drawing.Size(285, 150);
+            this.BinOutBox.TabIndex = 1;
             // 
-            // outTBox
+            // BinInpBox
             // 
-            this.outTBox.Location = new System.Drawing.Point(297, 0);
-            this.outTBox.Multiline = true;
-            this.outTBox.Name = "outTBox";
-            this.outTBox.ReadOnly = true;
-            this.outTBox.Size = new System.Drawing.Size(290, 160);
-            this.outTBox.TabIndex = 1;
+            this.BinInpBox.Location = new System.Drawing.Point(0, 0);
+            this.BinInpBox.Multiline = true;
+            this.BinInpBox.Name = "BinInpBox";
+            this.BinInpBox.ReadOnly = true;
+            this.BinInpBox.Size = new System.Drawing.Size(285, 150);
+            this.BinInpBox.TabIndex = 0;
             // 
-            // progressBar1
+            // HexPage
             // 
-            this.progressBar1.Location = new System.Drawing.Point(0, 286);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(587, 23);
-            this.progressBar1.TabIndex = 2;
+            this.HexPage.Location = new System.Drawing.Point(4, 22);
+            this.HexPage.Name = "HexPage";
+            this.HexPage.Padding = new System.Windows.Forms.Padding(3);
+            this.HexPage.Size = new System.Drawing.Size(577, 336);
+            this.HexPage.TabIndex = 1;
+            this.HexPage.Text = "Hexadecimal";
+            this.HexPage.UseVisualStyleBackColor = true;
             // 
-            // binTBtn
+            // OctPage
             // 
-            this.binTBtn.AutoSize = true;
-            this.binTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.binTBtn.Location = new System.Drawing.Point(0, 170);
-            this.binTBtn.Name = "binTBtn";
-            this.binTBtn.Size = new System.Drawing.Size(70, 21);
-            this.binTBtn.TabIndex = 3;
-            this.binTBtn.TabStop = true;
-            this.binTBtn.Text = "Binário";
-            this.binTBtn.UseVisualStyleBackColor = true;
+            this.OctPage.Location = new System.Drawing.Point(4, 22);
+            this.OctPage.Name = "OctPage";
+            this.OctPage.Padding = new System.Windows.Forms.Padding(3);
+            this.OctPage.Size = new System.Drawing.Size(577, 336);
+            this.OctPage.TabIndex = 2;
+            this.OctPage.Text = "Octal";
+            this.OctPage.UseVisualStyleBackColor = true;
             // 
-            // hexTBtn
+            // ASCIIPage
             // 
-            this.hexTBtn.AutoSize = true;
-            this.hexTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hexTBtn.Location = new System.Drawing.Point(0, 200);
-            this.hexTBtn.Name = "hexTBtn";
-            this.hexTBtn.Size = new System.Drawing.Size(106, 21);
-            this.hexTBtn.TabIndex = 4;
-            this.hexTBtn.TabStop = true;
-            this.hexTBtn.Text = "Hexadecimal";
-            this.hexTBtn.UseVisualStyleBackColor = true;
+            this.ASCIIPage.Location = new System.Drawing.Point(4, 22);
+            this.ASCIIPage.Name = "ASCIIPage";
+            this.ASCIIPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ASCIIPage.Size = new System.Drawing.Size(577, 336);
+            this.ASCIIPage.TabIndex = 3;
+            this.ASCIIPage.Text = "ASCII";
+            this.ASCIIPage.UseVisualStyleBackColor = true;
             // 
-            // octTBtn
+            // BinBtn2
             // 
-            this.octTBtn.AutoSize = true;
-            this.octTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.octTBtn.Location = new System.Drawing.Point(0, 230);
-            this.octTBtn.Name = "octTBtn";
-            this.octTBtn.Size = new System.Drawing.Size(59, 21);
-            this.octTBtn.TabIndex = 5;
-            this.octTBtn.TabStop = true;
-            this.octTBtn.Text = "Octal";
-            this.octTBtn.UseVisualStyleBackColor = true;
+            this.BinBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn2.Location = new System.Drawing.Point(187, 160);
+            this.BinBtn2.Name = "BinBtn2";
+            this.BinBtn2.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn2.TabIndex = 4;
+            this.BinBtn2.Text = "2";
+            this.BinBtn2.UseVisualStyleBackColor = true;
             // 
-            // decTBtn
+            // BinBtn3
             // 
-            this.decTBtn.AutoSize = true;
-            this.decTBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.decTBtn.Location = new System.Drawing.Point(0, 260);
-            this.decTBtn.Name = "decTBtn";
-            this.decTBtn.Size = new System.Drawing.Size(76, 21);
-            this.decTBtn.TabIndex = 6;
-            this.decTBtn.TabStop = true;
-            this.decTBtn.Text = "Decimal";
-            this.decTBtn.UseVisualStyleBackColor = true;
+            this.BinBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn3.Location = new System.Drawing.Point(32, 216);
+            this.BinBtn3.Name = "BinBtn3";
+            this.BinBtn3.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn3.TabIndex = 5;
+            this.BinBtn3.Text = "3";
+            this.BinBtn3.UseVisualStyleBackColor = true;
             // 
-            // transBtn
+            // BinBtn4
             // 
-            this.transBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transBtn.Location = new System.Drawing.Point(491, 230);
-            this.transBtn.Name = "transBtn";
-            this.transBtn.Size = new System.Drawing.Size(96, 50);
-            this.transBtn.TabIndex = 7;
-            this.transBtn.Text = "Traduzir";
-            this.transBtn.UseVisualStyleBackColor = true;
-            this.transBtn.Click += new System.EventHandler(this.transBtn_Click);
+            this.BinBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn4.Location = new System.Drawing.Point(110, 216);
+            this.BinBtn4.Name = "BinBtn4";
+            this.BinBtn4.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn4.TabIndex = 6;
+            this.BinBtn4.Text = "4";
+            this.BinBtn4.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // BinBtn5
             // 
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(290, 160);
-            this.textBox2.TabIndex = 0;
+            this.BinBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn5.Location = new System.Drawing.Point(187, 216);
+            this.BinBtn5.Name = "BinBtn5";
+            this.BinBtn5.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn5.TabIndex = 7;
+            this.BinBtn5.Text = "5";
+            this.BinBtn5.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // BinBtn6
             // 
-            this.textBox3.Location = new System.Drawing.Point(297, 0);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(290, 160);
-            this.textBox3.TabIndex = 1;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(0, 286);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(587, 23);
-            this.progressBar2.TabIndex = 2;
-            // 
-            // binCBtn
-            // 
-            this.binCBtn.AutoSize = true;
-            this.binCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.binCBtn.Location = new System.Drawing.Point(0, 170);
-            this.binCBtn.Name = "binCBtn";
-            this.binCBtn.Size = new System.Drawing.Size(70, 21);
-            this.binCBtn.TabIndex = 3;
-            this.binCBtn.TabStop = true;
-            this.binCBtn.Text = "Binário";
-            this.binCBtn.UseVisualStyleBackColor = true;
-            // 
-            // hexCBtn
-            // 
-            this.hexCBtn.AutoSize = true;
-            this.hexCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hexCBtn.Location = new System.Drawing.Point(0, 200);
-            this.hexCBtn.Name = "hexCBtn";
-            this.hexCBtn.Size = new System.Drawing.Size(106, 21);
-            this.hexCBtn.TabIndex = 4;
-            this.hexCBtn.TabStop = true;
-            this.hexCBtn.Text = "Hexadecimal";
-            this.hexCBtn.UseVisualStyleBackColor = true;
-            // 
-            // octCBtn
-            // 
-            this.octCBtn.AutoSize = true;
-            this.octCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.octCBtn.Location = new System.Drawing.Point(0, 230);
-            this.octCBtn.Name = "octCBtn";
-            this.octCBtn.Size = new System.Drawing.Size(59, 21);
-            this.octCBtn.TabIndex = 5;
-            this.octCBtn.TabStop = true;
-            this.octCBtn.Text = "Octal";
-            this.octCBtn.UseVisualStyleBackColor = true;
-            // 
-            // decCBtn
-            // 
-            this.decCBtn.AutoSize = true;
-            this.decCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.decCBtn.Location = new System.Drawing.Point(0, 260);
-            this.decCBtn.Name = "decCBtn";
-            this.decCBtn.Size = new System.Drawing.Size(76, 21);
-            this.decCBtn.TabIndex = 6;
-            this.decCBtn.TabStop = true;
-            this.decCBtn.Text = "Decimal";
-            this.decCBtn.UseVisualStyleBackColor = true;
-            // 
-            // creBtn
-            // 
-            this.creBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creBtn.Location = new System.Drawing.Point(491, 230);
-            this.creBtn.Name = "creBtn";
-            this.creBtn.Size = new System.Drawing.Size(96, 50);
-            this.creBtn.TabIndex = 7;
-            this.creBtn.Text = "Create";
-            this.creBtn.UseVisualStyleBackColor = true;
+            this.BinBtn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BinBtn6.Location = new System.Drawing.Point(32, 272);
+            this.BinBtn6.Name = "BinBtn6";
+            this.BinBtn6.Size = new System.Drawing.Size(50, 50);
+            this.BinBtn6.TabIndex = 8;
+            this.BinBtn6.Text = "6";
+            this.BinBtn6.UseVisualStyleBackColor = true;
             // 
             // TranslatorPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 333);
-            this.Controls.Add(this.PageControl);
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.PagesControl);
             this.MaximizeBox = false;
             this.Name = "TranslatorPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Translator";
-            this.PageControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.PagesControl.ResumeLayout(false);
+            this.BinPage.ResumeLayout(false);
+            this.BinPage.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl PageControl;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button transBtn;
-        private System.Windows.Forms.RadioButton decTBtn;
-        private System.Windows.Forms.RadioButton octTBtn;
-        private System.Windows.Forms.RadioButton hexTBtn;
-        private System.Windows.Forms.RadioButton binTBtn;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.TextBox outTBox;
-        private System.Windows.Forms.TextBox inpTBox;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Button creBtn;
-        private System.Windows.Forms.RadioButton decCBtn;
-        private System.Windows.Forms.RadioButton octCBtn;
-        private System.Windows.Forms.RadioButton hexCBtn;
-        private System.Windows.Forms.RadioButton binCBtn;
+        private System.Windows.Forms.TabControl PagesControl;
+        private System.Windows.Forms.TabPage BinPage;
+        private System.Windows.Forms.TabPage HexPage;
+        private System.Windows.Forms.TabPage OctPage;
+        private System.Windows.Forms.TabPage ASCIIPage;
+        private System.Windows.Forms.Button BinBtn1;
+        private System.Windows.Forms.Button BinBtn0;
+        private System.Windows.Forms.TextBox BinOutBox;
+        private System.Windows.Forms.TextBox BinInpBox;
+        private System.Windows.Forms.Button BinBtn6;
+        private System.Windows.Forms.Button BinBtn5;
+        private System.Windows.Forms.Button BinBtn4;
+        private System.Windows.Forms.Button BinBtn3;
+        private System.Windows.Forms.Button BinBtn2;
     }
 }
 
